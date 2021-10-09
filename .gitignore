@@ -1,0 +1,5 @@
+# Project exclude paths
+/myjarservice-v1/target/
+/myjarservice-v2/target/
+/myjarservice-v3/target/
+/myjarservice-v4/target/

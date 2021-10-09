@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>myjarplugin</artifactId>
+        <groupId>com.quadtalent.sofaark</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>myjarservice-v2</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.quadtalent.sofaark</groupId>
+            <artifactId>myjar</artifactId>
+            <version>2.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.alipay.sofa</groupId>
+                <artifactId>sofa-ark-plugin-maven-plugin</artifactId>
+                <version>1.1.0</version>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <goals>
+                            <goal>ark-plugin</goal>
+                        </goals>
+
+                        <configuration>
+                            <!-- configure exported class -->
+                            <exported>
+                                <!-- configure class-level exported class -->
+                                <classes>
+
+                                    <class>com.quadtalent.sofaark.myjarplugin.MyJarService2</class>
+                                </classes>
+                            </exported>
+
+                            <!-- 是否把 ark plugin 安装、发布到仓库，默认为true -->
+                            <attach>true</attach>
+
+                            <!--设置 ark plugin 的 classifier, 默认为空, 如非必要，建议不用设置-->
+                            <classifier>ark-plugin</classifier>
+
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
