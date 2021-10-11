@@ -14,11 +14,13 @@ public class SamplePluginActivator implements PluginActivator {
 
     public void start(PluginContext context) throws ArkRuntimeException {
         System.out.println("starting in sample ark plugin activator");
+        System.out.println();
         context.publishService(SamplePluginService.class, new SamplePluginServiceImpl());
     }
 
     public void stop(PluginContext context) throws ArkRuntimeException {
         System.out.println("stopping in ark plugin activator");
+        System.out.println();
     }
 
 }

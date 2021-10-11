@@ -46,7 +46,7 @@
                             <exported>
                                 <!-- configure class-level exported class -->
                                 <classes>
-                                    <class>com.quadtalent.sofaark.myjarplugin.MyJarService1</class>
+                                    <class>com.quadtalent.sofaark.myjarplugin.SsoPluginService</class>
                                 </classes>
                             </exported>
 

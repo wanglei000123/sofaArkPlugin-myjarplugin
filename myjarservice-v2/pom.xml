@@ -38,7 +38,7 @@
                                 <!-- configure class-level exported class -->
                                 <classes>
 
-                                    <class>com.quadtalent.sofaark.myjarplugin.MyJarService2</class>
+                                    <class>com.quadtalent.sofaark.myjarplugin.TaskDesignerPluginService</class>
                                 </classes>
                             </exported>
 
